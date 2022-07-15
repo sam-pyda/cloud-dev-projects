@@ -9,7 +9,7 @@ version: 2.1
 jobs:
   create_infrastructure: 
     docker:
-      - image: circleci/node:13.8.0
+      - image: cimg/aws:2022.6.1
     steps:
       - checkout
       - run:
