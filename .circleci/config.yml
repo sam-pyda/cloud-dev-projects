@@ -33,6 +33,5 @@ workflows:
   # Name the workflow
     my_workflow:
       jobs:
-        - aws-cli-example:
-          context: aws
+        - aws-cli-example
         - create_infrastructure
