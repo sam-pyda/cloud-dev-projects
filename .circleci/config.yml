@@ -14,13 +14,13 @@ orbs:
      # docker:
       #  - image: python:3.8
 jobs:
-  aws-cli-example:
-    executor: aws-cli/default
-    steps:
-      - checkout
-      - aws-cli/setup:
-          profile-name: example
-      - run: echo "Run your code here"
+ # aws-cli-example:
+    #executor: aws-cli/default
+    #steps:
+     # - checkout
+     # - aws-cli/setup:
+    #      profile-name: example
+   #   - run: echo "Run your code here"
   create_infrastructure: 
     docker:
       - image: python:3.8
@@ -40,5 +40,5 @@ workflows:
   # Name the workflow
     my_workflow:
       jobs:
-        - aws-cli-example
+      #  - aws-cli-example
         - create_infrastructure
