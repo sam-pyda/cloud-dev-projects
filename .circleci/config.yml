@@ -19,7 +19,8 @@ jobs:
               --template-file template.yml \
               --stack-name myStack-${CIRCLE_WORKFLOW_ID:0:5} \
               --region us-east-1
-          shell: powershell.exe
+          shell: /bin/sh
+          #shell: powershell.exe
 # Sequential workflow
 workflows:
   # Name the workflow
