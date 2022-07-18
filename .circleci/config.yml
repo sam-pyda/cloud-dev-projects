@@ -36,7 +36,7 @@ jobs:
       - run:
           name: Run Playbook and Configure server
           command: |
-            ansible-playbook -i inventory.txt C:\Users\Samuel\Desktop\DS project\cloud_dev\playbook\main1.yml
+            ansible-playbook -i inventory.txt  main1.yml
           
 workflows:
   # Name the workflow
