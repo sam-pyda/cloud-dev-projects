@@ -19,7 +19,4 @@ Resources:
           FromPort: '22'
           ToPort: '22'
           CidrIp: 0.0.0.0/0
-        - IpProtocol: tcp
-          FromPort: '3000'
-          ToPort: '-1'
-          CidrIp: 0.0.0.0/0
+        
